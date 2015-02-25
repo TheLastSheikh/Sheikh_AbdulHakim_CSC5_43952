@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: rcc
- *
- * Created on February 25, 2015, 10:45 AM
+ * Purpose to test the goddamned software
+ * Created on February 25, 2015, 10:48 AM
  */
 
 #include <cstdlib>
