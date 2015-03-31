@@ -1,0 +1,10 @@
+Your Bill from 'The Cable Guy Inc.'
+
+Customer Name: Sheikh
+
+Package: A
+
+Hours Used: 56.00
+
+Amount Owed: $101.95
+
