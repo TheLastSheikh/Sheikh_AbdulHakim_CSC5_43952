@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Sheikh, Abdul Hakim
- * Purpose: Calculate Areas of Geometric Shapes
+ * Purpose: Calculate Areas of Geometric Shapes (Circles, Triangles and Rectangles)
  * Created on March 30, 2015, 4:24 PM
  */
 

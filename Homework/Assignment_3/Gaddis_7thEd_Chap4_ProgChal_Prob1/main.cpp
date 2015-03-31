@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Sheikh, Abdul Hakim
- * Purpose:
+ * Purpose: Determine larger number
  * Created on March 30, 2015, 4:17 PM
  */
 
