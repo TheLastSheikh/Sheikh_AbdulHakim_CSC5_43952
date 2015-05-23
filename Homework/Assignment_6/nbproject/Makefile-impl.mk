@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=DrinkMachineSimulator
+PROJECTNAME=Assignment_6
 
 # Active Configuration
 DEFAULTCONF=Debug
