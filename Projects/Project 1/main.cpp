@@ -277,7 +277,6 @@ void ptCrdHn(int carDeck[], int carChnc[][2], char cHand[], int hand[]){
 int main(int argc, char** argv) {
 //Declare Variables
     ofstream out;
-    float yousuckgiantcocksdrlehrinaserbianprison;
  bool cycle = true;
  while(cycle){
  //13 Cards in deck starting from Ace = 1 to King = 13
