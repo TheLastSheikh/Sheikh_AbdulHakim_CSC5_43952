@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: The Sheikh
- * Purpose: Make a Black Jack Program
+ * Purpose: Make a Black Jack Program, Initalize it for Project 2
  * Created on May 6, 2015, 7:35 PM
  */
 
@@ -23,24 +23,24 @@ using namespace std;
 
 //Function Prototypes
 
-void shuffle ( int[] )                                                                                ;//Function for Shuffling deck of cards. 
-int  getNum  ( int[] )                                                                                ;//Function for getting number of cards in deck
-void getChnc ( int[] , int [][2])                                                                     ;//Function for getting the chance for drawing specific cards (Ace,2,3,4... --->King)
-int  drwCard ( int[] , int [][2])                                                                     ;//Function to draw a card and return card value
-int  cardVal ( int )                                                                                  ;//Function enumerating the numeric values of each card
-char drwChar ( int )                                                                                  ;//Function to show character value of each card, rather ineptly named but it works
-int  numAces ( int [] )                                                                               ;//
-void decrAce ( int [] )                                                                               ;//Function to decrement the value of the aces should the sum of the hand equal more than 21
-int  sum     ( int [] )                                                                               ;//Function for adding the value of hand
-void enterLn ( int )                                                                                  ;//Function to add white space
-bool bust    ( int [] )                                                                               ;//Function to determine whether player has busted or not
-void bgnGame ( int [], int [][2], int [], char [], int [], char [], int [], char [], int [], char []) ;//Function to begin game
+void shuffle ( int[] )                                                                                       ;//Function for Shuffling deck of cards. 
+int  getNum  ( int[] )                                                                                       ;//Function for getting number of cards in deck
+void getChnc ( int[] , int [][2])                                                                            ;//Function for getting the chance for drawing specific cards (Ace,2,3,4... --->King)
+int  drwCard ( int[] , int [][2])                                                                            ;//Function to draw a card and return card value
+int  cardVal ( int )                                                                                         ;//Function enumerating the numeric values of each card
+char drwChar ( int )                                                                                         ;//Function to show character value of each card, rather ineptly named but it works
+int  numAces ( int [] )                                                                                      ;//Function to track number of aces in hand
+void decrAce ( int [] )                                                                                      ;//Function to decrement the value of the aces should the sum of the hand equal more than 21
+int  sum     ( int [] )                                                                                      ;//Function for adding the value of hand
+void enterLn ( int )                                                                                         ;//Function to add white space
+bool bust    ( int [] )                                                                                      ;//Function to determine whether player has busted or not
+void bgnGame ( int [], int [][2], int [], char [], int [], char [], int [], char [], int [], char [])        ;//Function to begin game
 void dsplyUI ( char [], char [], char [], char [], int [], int [], int [], int [],int, int, int, int, bool ) ;//Function to display user interface
-int  hndSize ( char [])                                                                               ;//Function to display hand size
-void dispHnd ( bool , char [])                                                                        ;//Function to display the hand
-void ptCrdHn ( int [], int [][2], char [], int [])                                                    ;//Function to put card in hand
-void clrScrn ( )                                                                                      ;//Function to clear screen in console window
-void enterLn ( )                                                                                      ;//Function to dictate how many lines to clear screen
+int  hndSize ( char [])                                                                                      ;//Function to display hand size
+void dispHnd ( bool , char [])                                                                               ;//Function to display the hand
+void ptCrdHn ( int [], int [][2], char [], int [])                                                           ;//Function to put card in hand
+void clrScrn ( )                                                                                             ;//Function to clear screen in console window
+void enterLn ( )                                                                                             ;//Function to dictate how many lines to clear screen
 
 
 
@@ -242,11 +242,11 @@ void enterLn(int i){
 
 void dsplyUI(char cPlyHnd[], char cDlHand[], char cai1Hnd[], char cai2Hnd[], int ai1Hand[], int ai2Hand[], int plyHand[], int delHand[],int plyCash, int delCash, int ai1Cash, int ai2Cash, bool endGame){
  clrScrn();
- cout << "($" << delCash << ") Dealer Hand: ";
+ cout << "($" << delCash << ")   Dealer Hand: ";
  dispHnd(!endGame, cDlHand);
- cout << endl << "($" << ai1Cash << ") Ai1 Hand: ";
+ cout << endl << "($" << ai1Cash << ") Ai1 Hand:    ";
  dispHnd(!endGame, cai1Hnd);
- cout << endl << "($" << ai2Cash << ") Ai2 Hand: ";
+ cout << endl << "($" << ai2Cash << ") Ai2 Hand:    ";
  dispHnd(!endGame, cai2Hnd);
  cout << endl << "($" << plyCash << ") Player Hand: ";
  dispHnd(false, cPlyHnd);
@@ -328,11 +328,11 @@ int main(int argc, char** argv) {
     int  delHand  [15] = {};                          //Initialize  values of array as '0'
     char cDlHand  [15] = {};                          //Character assignment for each spot in array (i.e. 11=Jack, 12=Queen, 13=King etc.)
   
-    int  ai1Hand  [15] = {};
-    char cai1Hnd  [15] = {};
+    int  ai1Hand  [15] = {};                          //Initialize  values of array as '0'
+    char cai1Hnd  [15] = {};                          //Character assignment for each spot in array (i.e. 11=Jack, 12=Queen, 13=King etc.)
     
-    int  ai2Hand  [15] = {};
-    char cai2Hnd  [15] = {};
+    int  ai2Hand  [15] = {};                          //Initialize  values of array as '0'
+    char cai2Hnd  [15] = {};                          //Character assignment for each spot in array (i.e. 11=Jack, 12=Queen, 13=King etc.)
     
     int choice;                                       //The choice input variable for whether or not player wants to hit or stay
     int d = sum (delHand);                            //Sum of dealers hand
